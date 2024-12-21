@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CRM Paralllel Testing" parallel="tests">
+	
+	<listeners>
+		<listener class-name="com.crm.qa.util.Listeners"/>
+	</listeners>
+	
+	<test thread-count="1" name="Kiran Executing">
+		<classes>
+			<class name="com.crm.qa.testcases.ContactPageTest" />
+		</classes>
+	</test>
+	
+
+<test thread-count="1" name="Akash Execution">
+		<classes>
+			<class name="com.crm.qa.testcases.LoginPageTest" />
+		
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Login Page]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Parallet Testing(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.ContactPageTest">
+        <methods>
+          <include name="verifyNewContact"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactPageTest -->
+    </classes>
+  </test> <!-- Parallet Testing(failed) -->
+</suite> <!-- Failed suite [Login Page] -->
